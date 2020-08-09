@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+</head>
+<link rel="stylesheet" href="adm.css">
+
+<body>
+    <div class="navbar">
+        <img src="images/logo.png" width="70px" height="60px" style="  margin-left: 10%;margin-top:8px">
+        <a href="#" class="logo">GoFoody</a>
+        <div class="nav">
+            <a href="dash.html"><button style="height: 40px;color:white;">Back</button></a>
+            <button style="height: 40px;margin-top: 15px;" onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+
+    <div class="container">
+
+
+        <div>
+            <h2>Add Address</h2><br>
+            <span id="xyz" style="font-size: 18px;"> Enter Owner Name</span><br>
+            <input type="text" placeholder="Enter Owner Name" class="full" id="owner"><br><br>
+            <span id="xyz" style="font-size: 18px;"> Enter Username</span><br>
+            <input type="text" placeholder="Enter Username" class="full" id="username"><br><br>
+            <span id="xyz" style="font-size: 18px;"> Enter Password</span><br>
+            <input type="password" placeholder="Enter Address" class="full" id="password"><br><br>
+            <span id="xyz" style="font-size: 18px;"> Enter Address</span><br>
+            <input type="text" placeholder="Enter Address" class="full" id="address"><br><br>
+            <span id="xyz" style="font-size: 18px;">Enter State</span><br>
+            <input type="text" placeholder="Enter State" class="full" id="state"><br><br>
+            <span id="xyz" style="font-size: 18px;"> Enter City</span><br>
+            <input type="text" placeholder="Enter City" class="full" id="city"><br><br>
+            <span id="xyz" style="font-size: 18px;" z>Enter Pincode</span><br>
+            <input type="text" placeholder="Enter Pincode" class="full" id="pincode"><br><br>
+            <span id="xyz" style="font-size: 18px;" z>Enter Contact No.</span><br>
+            <input type="text" placeholder="Enter Contact No." class="full" id="contact"><br><br>
+            <button onclick="add()">Add</button>&nbsp;&nbsp;<button onclick="reset()">Reset</button>
+        </div>
+
+
+        <div id="showaddress">
+            <!-- <table>
+                <tr>
+                  <th>Address</th>
+                  <th>State</th>
+                  <th>City</th>
+                  <th>Pincode</th>
+                  <th>Contact</th>
+                  <th>Remove</th>
+                </tr>
+                <tr>
+                  <td>ashirwad gali near ramnagr mot</td>
+                  <td>Griffin</td>
+                  <td>$100</td>
+                  <td>$100</td>
+                  <td>9835066219</td>
+                  <td><button>X</button></td>
+                </tr>
+              </table> -->
+        </div>
+    </div>
+    <div class="alert" id="alert">
+        <!-- <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <strong>Danger!</strong> Indicates a dangerous or potentially negative action. -->
+    </div>
+    <script src="address.js"></script>
+</body>
+
+</html>

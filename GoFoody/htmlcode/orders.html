@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+</head>
+<link rel="stylesheet" href="adm.css">
+
+<body>
+    <div class="navbar">
+        <img src="images/logo.png" width="70px" height="60px" style="  margin-left: 10%;margin-top:8px">
+        <a href="#" class="logo">GoFoody</a>
+        <div class="nav">
+            <a href="dash.html"><button style="height: 40px;color:white;">Back</button></a>
+            <button style="height: 40px;margin-top: 15px;" onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+
+    <div class="prof-head" style="top:13%; color: black;border-bottom: 1px solid black;">Order Details</div>
+    <div id="order">
+
+    </div>
+
+    <div class="food_details" id="food">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <!-- <table>
+            <tr>
+                <th>Food</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Veg Burger</td>
+                <td>2</td>
+                <td>100</td>
+            </tr>
+        </table> -->
+    </div>
+
+    <script src="orders.js"></script>
+</body>
+
+</html>

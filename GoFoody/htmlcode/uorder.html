@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <img src="images/logo.png" width="70px" height="60px" style="  margin-left: 10%;margin-top:8px">
+        <a href="#" class="logo">GoFoody</a>
+        <ul class="nav">
+            <li><a href="welcome.html">HOME</a></li>
+            <li id="noti"><button style="background-color: transparent;margin-left: -10px;margin-top: -5px;border:none; " id="mybtn" onclick="showNotify()"><img src="images/notification.svg" id="noti-img" style="width:25px; height:25px;cursor: pointer;"/>
+                <div class="count" style="display: none; border-radius: 10px; margin-right: 18px;margin-top: -25px;width: 10px;height: 10px;"> </div>
+            </button>
+                <div class="notify">
+                    <div class="not">Notification<span id="clear" onclick="clearNotify()">Clear All</span></div>
+                    <div id="not-det">
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div style="margin-top: -10px; " class="dropdown" id="dropdown">
+                    <button class="dropbtn" id="dropbtn"></button>
+                    <div class="dropdown-content">
+                        <a href="profile.html">Profile</a>
+                        <a onclick="logout()">Logout</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="mainOrder" id="maina">
+
+    </div>
+
+
+    <script src="uorder.js"></script>
+</body>
+
+</html>

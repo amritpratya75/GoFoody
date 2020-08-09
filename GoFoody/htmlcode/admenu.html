@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<link rel="stylesheet" href="adm.css">
+
+<body>
+
+    <div class="navbar">
+        <img src="images/logo.png" width="70px" height="60px" style="  margin-left: 10%;margin-top:8px">
+        <a href="#" class="logo">GoFoody</a>
+        <div class="nav">
+            <a href="dash.html"><button style="height: 40px;color:white;">Back</button></a>
+            <button style="height: 40px;margin-top: 15px;" onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div>
+            <h3>Add Menu Category</h3>
+            <span id="xyz" style="font-size: 18px;">Category Name</span><br>
+            <input type="text" placeholder="Enter Category" class="full" id="cat_name"><br><br>
+            <button onclick="addCategory()">Add</button>
+        </div>
+        <div id="category">
+            <!-- <table>
+                <tr>
+                  <th>Category</th>
+                  <th>Remove</th>
+                </tr>
+                <tr>
+                  <td>Griffin</td>
+                  <td><button>X</button></td>
+                </tr>
+                <tr>
+                  <td>Lois</td>
+                  <td><button>X</button></td>
+                </tr>
+                <tr>
+                  <td>Joe</td>
+                  <td><button>X</button></tr>
+                </tr>
+              </table> -->
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div>
+            <h3>Add Menu</h3>
+            <label for="menu" style="font-size: 17px;">Choose a category:</label>
+            <div id="cate">
+                <!-- <select id="menu" style="font-size: 15px;">
+               &nbsp;<option value="dosa">Dosa </option>         
+            </select> -->
+            </div><br><br>
+            <span id="xyz" style="font-size: 18px;">Menu Name</span><br>
+            <input type="text" placeholder="Enter Menu" class="full" id="name"><br><br>
+            <span id="xyz" style="font-size: 18px;">Enter Price</span><br>
+            <input type="text" placeholder="Enter Price" class="full" id="price"><br><br>
+            <span id="xyz" style="font-size: 18px;">Upload Menu Image</span><br>
+            <input type="file" name="file" id="images"><br><br>
+            <button onclick="addMenu()">Add</button>
+        </div>
+        <div id="show_menu">
+            <!-- <table>
+                <tr>
+                  <th>Menu</th>
+                  <th>Price</th>
+                  <th>Remove</th>
+                  <th>Edit</th>
+                </tr>
+                <tr>
+                  <td>Griffin</td>
+                  <td>100</td>
+                  <td><button>X</button></td>
+                  <td><button>Edit</button></td>
+                </tr>
+              </table> -->
+        </div>
+    </div>
+
+
+
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <h3>Edit Menu</h3><span class="close">&times;</span>
+            <hr>
+            <div>
+                <span id="xyz" style="font-size: 18px;">Menu Name</span><br>
+                <input type="text" placeholder="Enter Menu" class="full" id="ed_name"><br><br>
+                <span id="xyz" style="font-size: 18px;">Enter Price</span><br>
+                <input type="text" placeholder="Enter Price" class="full" id="ed_price"><br><br>
+                <input type="hidden" id="menuId">
+                <button onclick="saveMenu()">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert" id="alert">
+        <!-- <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+    <strong>Danger!</strong> Indicates a dangerous or potentially negative action. -->
+    </div>
+    <script src="admenu.js"></script>
+</body>
+
+</html>

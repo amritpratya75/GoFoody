@@ -1,0 +1,23 @@
+{
+  "name": "gofoody",
+  "version": "1.0.0",
+  "description": "onliine food ordering system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "amrit.pratya75@gmail.com"
+  },
+  "author": "amrit",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.3",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.2"
+  }
+}

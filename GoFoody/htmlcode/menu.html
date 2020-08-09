@@ -1,0 +1,110 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="images/logo.png" width="70px" height="60px" style="  margin-left: 10%;margin-top:8px">
+        <a href="#" class="logo">GoFoody</a>
+        <ul class="nav">
+            <li><a href="welcome.html">HOME</a></li>
+            <li id="logn" style="background-color: white;border-radius: 20px;border: 2px solid #000;;"><a href="login.html?redirect_page=menu">LOGIN</a></li>
+            <li>
+                <div style="display: none;margin-top: -10px" class="dropdown" id="dropdown">
+                    <button class="dropbtn" id="dropbtn"></button>
+                    <div class="dropdown-content" style="right: 280px;">
+                        <a href="profile.html">Profile</a>
+                        <a href="uorder.html">Orders</a>
+                        <a onclick="logout()">Logout</a>
+                    </div>
+                </div>
+            </li>
+            <li><button style="background-color: transparent;margin-left:10px;margin-top: -8px;border:none; " id="mybtn"><img src="images/shopping-cart.svg" style="width:30px; height:30px;cursor: pointer;"/><div class="count"><span id="total-count"></span></div></button></li>
+        </ul>
+    </div>
+    <div class="half-banner">
+        <div class="address" id="address">
+            <!-- Near HLG , Asansol , WestBengal&nbsp;<br>
+        Pincode:80001 -->
+        </div>
+    </div>
+    <div class="full-menu">
+        <div class="menucat">
+            <h3>Menu</h3>
+            <hr>
+            <div id="cat">
+            </div>
+        </div>
+
+        <div class="menuprice">
+            <div id="view">
+                <!-- <h3>Sandwich</h3><hr> -->
+            </div>
+            <div class="card-container" id="fav">
+                <!-- <div class="card">
+            <div class="card-img">
+                <img src="images/4.jpg" width="240px">
+            </div>
+            <div class="card-details">
+                Family Masala Dosa<br>
+                Rs 200
+            </div>
+            <div class="card-add">
+                <button> Add To Cart </button>
+            </div>
+        </div>            -->
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal For Cart -->
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <h3>Cart</h3><span class="close">&times;</span>
+            <hr>
+            <div class="table" id="show-cart">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 18px;">Family Masala Dosa</td>
+                        <td>Rs 250</td>
+                        <td><button class="qty">+</button><input type="text" value="1" class="qty-input"><button class="qty">-</button></td>
+                        <td>Rs 250</td>
+                        <td><button>Remove</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tot-amt">Total Amount :- Rs <span id="total-cart"></span></div>
+            <hr>
+            <div class="cart-but">
+                <button onclick="clearCart()" style="right: 200px;">Clear Cart</button>
+                <button style="background-color:darkgrey; margin-left: 15px;" onclick="checkout()">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="alert" id="alert">
+        <!-- <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+    <strong>Danger!</strong> Indicates a dangerous or potentially negative action. -->
+    </div>
+
+
+
+
+    <script src="menu.js"></script>
+</body>
+
+</html>

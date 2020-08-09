@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="images/logo.png" width="70px" height="60px" style="  margin-left: 10%;margin-top:8px">
+        <a href="#" class="logo">GoFoody</a>
+        <div class="nav">
+            <div class="dropdown">
+                <button class="dropbtn" id="dropbtn"></button>
+                <div class="dropdown-content">
+                    <a href="profile.html">Profile</a>
+                    <a href="uorder.html">Orders</a>
+                    <a onclick="logout()">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="padding-top: 90px;text-align: center;font-size: 30px; margin-bottom: 20px;"> PAYMENT</div>
+    <div class="bill">
+        <div class="details-1">Bill Summary</div>
+        <div class="history">
+            Subtotal <span style="padding-left: 80%;" id="sub-total"></span>
+            <hr> CGST @ 2.5%<span style="padding-left: 75%;" id="cgst"></span>
+            <hr> SGST @ 2.5%<span style="padding-left: 75%;" id="sgst"></span>
+            <hr>
+            <div class="details-1">Total<span style="padding-left: 84%;" id="total"></span></div>
+        </div>
+    </div>
+    <div class="mode">
+        <div class="details-1">Payment Mode</div>
+        <div class="history">
+            <input type="radio" id="by-cash">By Cash
+        </div>
+        <button style="margin-left: 40%;margin-top: 5%;" onclick="addOrder()">Pay</button>
+    </div>
+
+
+
+    <div class="alert" id="alert">
+        <!-- <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <strong>Danger!</strong> Indicates a dangerous or potentially negative action. -->
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+
+</html>

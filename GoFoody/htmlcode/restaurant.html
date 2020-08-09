@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<link rel="stylesheet" href="adm.css">
+
+<body>
+    <div class="navbar">
+        <img src="images/logo.png" width="70px" height="60px" style="  margin-left: 10%;margin-top:8px">
+        <a href="#" class="logo">GoFoody</a>
+    </div>
+
+    <div class="bg_img">
+        <!-- <img src="images/background.jpg" class="bg_img"> -->
+    </div>
+    <div class="prof-head">Restaurant Login</div>
+    <div class="prof-cont">
+        <div class="prof-name" style="line-height: 1.5;">
+            <span id="xyz">Enter Username</span><br>
+            <input type="text" placeholder="Enter Username" class="full" id="username"><br>
+            <span id="xyz">Enter Password</span><br>
+            <input type="password" placeholder="Password" class="full" id="password">
+        </div>
+        <button onclick="loginRestaurant()">Login</button>&nbsp;&nbsp;<button style="background-color:white; color: black;" onclick="reset()">Reset</button>
+    </div>
+
+    <div class="alert" id="alert">
+        <!-- <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <strong>Danger!</strong> Indicates a dangerous or potentially negative action. -->
+    </div>
+
+    <script src="restaurant.js"></script>
+</body>
+
+</html>

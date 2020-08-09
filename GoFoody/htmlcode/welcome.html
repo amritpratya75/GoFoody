@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <title>Welcome</title>
+</head>
+<link rel="stylesheet" href="main.css">
+
+<body bgcolor="#a5ceec">
+    <div class="navbar">
+        <img src="images/logo.png" width="70px" height="60px" style="  margin-left: 10%;margin-top:8px">
+        <a href="welcome.html" class="logo">Go Foody</a>
+        <ul class="nav">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li id="logn" style="background-color:white;border-radius: 15px;border: 2px solid #000;"><a href="login.html?redirect_page=home">LOGIN</a></li>
+            <li style="display: none;" id="noti"><button style="background-color: transparent;margin-left: -10px;margin-top: -5px;border:none; " id="mybtn" onclick="showNotify()"><img src="images/notification.svg" id="noti-img" style="width:25px; height:25px;cursor: pointer;"/>
+                    <div class="count" style="display: none; border-radius: 10px; margin-right: 15px;margin-top: -25px;width: 10px;height: 10px;"> </div>
+                </button>
+                <div class="notify">
+                    <div class="not">Notification<span id="clear" onclick="clearNotify()">Clear All</span></div>
+                    <div id="not-det">
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div style="display: none;margin-top: -10px; " class="dropdown" id="dropdown">
+                    <button class="dropbtn" id="dropbtn"></button>
+                    <div class="dropdown-content">
+                        <a href="profile.html">Profile</a>
+                        <a href="uorder.html">Orders</a>
+                        <a onclick="logout()" style="cursor: pointer;">Logout</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="banner-area" id="home">
+        <div class="details">
+            <h1>Welcome To Foody Areana</h1>
+            <button class="button" onclick="storeAdd()">Search</button><br>
+            <input type="text" name="city" placeholder="Enter City" class="search" autocomplete="off"><br>
+            <ul id="matchlist" onclick="fetchData(event)">
+                <!-- <li>Patna</li>
+                        <li>Asansol</li> -->
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="about-area" id="about" style="display: grid;grid-template-columns: 1fr 2fr;">
+        <div><img src="images/head.png" height="70%" width="85%" style="margin-top: 110px;"></div>
+        <div>
+            <h1>About Us</h1>
+            <p>Eating is something which everyone loves to do, but what if you get whatever you desire while sitting at your home chilling with your family or friends.Go Foody is a customizable food restaurant chain which is the service to fulfil all these.Our
+                system provides the service of easy delivery of food from the restaurants to the customer at their door steps through online method.Our system also provides their customer with the health food who are very conscious with their health and
+                wants to eat a proper diet adviced by their dietician.</p>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="contact-area" id="contact">
+        <h1>Contact Us</h1>
+        <div class="contactus">
+            <p>Name:<br><input placeholder="Write your name here.." id="feed_name" class="input-fields"></input>
+            </p>
+            <p>Email:<br><input placeholder="Let us know how to contact you back.." id="feed_email" class="input-fields"></input>
+            </p>
+            <p>Message:<br><textarea placeholder="What would you like to tell us.." id="feed_msg" class="input-fieldsmess"></textarea></p>
+            <button onclick="feedback()">Send Message</button>
+            <div class="cont-details">
+                Contact No.: 001 1023 567<br> Email Address: contact@company.com
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="alert" id="alert">
+        <!-- <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <strong>Danger!</strong> Indicates a dangerous or potentially negative action. -->
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

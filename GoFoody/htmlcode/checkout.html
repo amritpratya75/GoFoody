@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="images/logo.png" width="70px" height="60px" style="  margin-left: 10%;margin-top:8px">
+        <a href="welcome.html" class="logo">GoFoody</a>
+        <div class="nav">
+            <div class="dropdown">
+                <button class="dropbtn" id="dropbtn"></button>
+                <div class="dropdown-content">
+                    <a href="profile.html">Profile</a>
+                    <a href="uorder.html">Orders</a>
+                    <a onclick="logout()">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-1">
+            <div class="cust-det">
+                <div class="details-1">
+                    Customer Details
+                </div>
+                <div class="details-2">
+                    <div class="right-details">
+                        Name<br><input type="text" placeholder="Enter your Name" class="input-f" id="name"><br><br> Phone No.<br><input type="text" placeholder="Enter your Phone No." class="input-f" id="phone-no.">
+                    </div>
+                    <div class="left-details">
+                        Address<br><textarea placeholder="Enter your Address" class="textarea-1" id="address"></textarea><br> E-mail
+                        <br><input type="text" placeholder="Enter your E-mail" class="input-f" id="e-mail">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="schedule">
+                <div class="details-1">
+                    Schedule Order
+                </div>
+                <div class="schedule-1">
+                    <input type="radio" name="Order" id="now" onclick="schedule()">Order Now<br>
+                    <input type="radio" name="Order" id="later" onclick="schedule()">Order Later
+                    <div id="order-later">
+                        Select Date
+                        <input type=date id="date">&emsp;&emsp;&emsp;&emsp; Select Time
+                        <input type="time" id="time">
+                    </div>
+                </div>
+            </div>
+            <div class="notes">
+                <div class="details-1">
+                    Notes
+                </div>
+                <div class="notes-1">
+                    <textarea placeholder="Enter your Message" id="notes" style="margin: 20px;width: 90%;height:15vh; "></textarea>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="check-cart">
+            <div class="details-1">
+                Cart
+            </div>
+            <div class="table" id="show-cart">
+                <!-- <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th></th>
+                </tr>
+                    <tr>
+                    <td style="font-size: 18px;">Family Masala Dosa</td>
+                    <td width=55px>Rs 250</td>
+                    <td><input type="text" value="1" class="qty-input"></td>
+                    <td width=55px> Rs 250</td>
+                    <td><button>Remove</button></td>
+                </tr>
+            </table> -->
+            </div>
+            <div class="tot-amt">Total Amount :- Rs <span id="total-cart"></span></div>
+            <hr>
+            <button style="margin-left: 150px;" onclick="pay()">Proceed To Pay</button>
+        </div>
+
+
+        <div class="alert" id="alert">
+            <!-- <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <strong>Danger!</strong> Indicates a dangerous or potentially negative action. -->
+        </div>
+
+        <script src="checkout.js"></script>
+    </div>
+</body>
+
+</html>

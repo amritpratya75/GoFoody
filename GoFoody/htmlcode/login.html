@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="images/logo.png" width="70px" height="60px" style="  margin-left: 10%;margin-top:8px">
+        <a href="#" class="logo">Go Foody</a>
+        <ul class="nav">
+            <li><a href="welcome.html">HOME</a></li>
+        </ul>
+    </div>
+
+
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div id="login" class="input-group">
+                <input type="text" class="input-field" id="email1" placeholder="Email" required>
+                <input type="password" class="input-field" id="passwd1" placeholder="Enter password" required>
+                <button class="submit-btn" onclick="loginUser()"> Log In</button><br> New User -:<span onclick="register()" class="clck">Click Here</span>
+
+            </div>
+            <div id="register" class="input-group">
+                <input type="text" class="input-field" id="name" placeholder="Enter Your Name" required>
+                <input type="email" class="input-field" id="email" placeholder="Enter Your Email" required>
+                <input type="password" class="input-field" id="passwd" placeholder="Enter Your Password" required>
+                <input type="text" class="input-field" id="address" placeholder="Enter Your Address" required>
+                <input type="text" class="input-field" id="contact" placeholder="Enter Your Mobile No." required>
+                <button class="submit-btn" onclick="registerUser()"> Register</button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="alert" id="alert">
+        <!-- <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <strong>Danger!</strong> Indicates a dangerous or potentially negative action. -->
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>
